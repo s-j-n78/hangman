@@ -112,9 +112,9 @@ function handleGuess(chosenLetter){
 function updatePicture(){
 	
 	if (mistakes < 6){
-	document.getElementById('hangmanPic').src = '/C:/Users/0144600/' + mistakes + '.jpg';
+	document.getElementById('hangmanPic').src = 'images/' + mistakes + '.jpg';
 	} else {
-	document.getElementById('hangmanPic').src = '/C:/Users/0144600/' + answer + '.jpg';
+	document.getElementById('hangmanPic').src = 'images/' + answer + '.jpg';
 }
 }
 
@@ -122,7 +122,7 @@ function checkIfGameWon(){
 	
 	if (wordStatus === answer){
 		document.getElementById('keyboard').innerHTML = "<h2>You Won</h2>";
-		document.getElementById('hangmanPic').src = '/C:/Users/0144600/' + answer + '.jpg'
+		document.getElementById('hangmanPic').src = 'images/' + answer + '.jpg'
 	}
 }
 
@@ -131,7 +131,7 @@ function checkIfGameLost(){
 	if (mistakes === maxWrong){
 		document.getElementById('wordSpotlight').innerHTML = answer;
 		document.getElementById('keyboard').innerHTML = "<h2>You Lost</h2>";
-		//document.getElementById('hangmanPic').src = '/C:/Users/0144600/' + answer + '.jpg'
+		//document.getElementById('hangmanPic').src = 'images/' + answer + '.jpg'
 		
 	}
 }
