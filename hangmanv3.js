@@ -151,7 +151,7 @@ function reset(){
 	answer = words[Math.floor(Math.random() * words.length)];
 	mistakes = 0;
 	guessed = [];
-	document.getElementById('hangmanPic').src = '/C:/Users/0144600/hangman.jpg';
+	document.getElementById('hangmanPic').src = 'images/hangman.jpg';
 	randomWord();
 	generateButtons();
 	guessedWord();
