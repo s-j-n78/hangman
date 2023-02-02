@@ -155,7 +155,7 @@ function reset(){
 	randomWord();
 	generateButtons();
 	guessedWord();
-	updateMistakes();
+	//updateMistakes();
 	hint.fetchHint();
 }
 
