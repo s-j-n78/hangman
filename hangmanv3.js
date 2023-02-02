@@ -34,7 +34,7 @@ noun.getWord();
 */
 
 
-let words = ["axolotl", "blobfish", "warthog", "condor", "aardvark", "echidna", "aye-aye", "shoebill"]
+let words = ["axolotl", "blobfish", "warthog", "condor", "aardvark", "echidna", "aye-aye", "shoebill", "gerenuk"]
 let answer = words[Math.floor(Math.random() * words.length)];
 let maxWrong = 6;
 let mistakes = 0;
