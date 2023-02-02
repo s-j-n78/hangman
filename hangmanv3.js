@@ -103,7 +103,7 @@ function handleGuess(chosenLetter){
 		checkIfGameWon();
 	} else if (answer.indexOf(chosenLetter) === -1){
 		mistakes++;
-		updateMistakes();
+		//updateMistakes();
 		checkIfGameLost();
 		updatePicture();
 	}
@@ -142,9 +142,9 @@ function guessedWord(){
 }
 
 
-function updateMistakes(){
-	document.getElementById('mistakes').innerHTML = mistakes;
-}
+//function updateMistakes(){
+	//document.getElementById('mistakes').innerHTML = mistakes;
+//}
 
 function reset(){
 	
@@ -160,7 +160,7 @@ function reset(){
 }
 
 
-document.getElementById('maxWrong').innerHTML = maxWrong;
+//document.getElementById('maxWrong').innerHTML = maxWrong;
 
 randomWord();
 generateButtons();
