@@ -70,7 +70,7 @@ let hint = {
 		
 		const { definition } = data[0].meanings[0].definitions[0];
 		console.log(definition);
-		document.getElementById('hint').innerHTML = definition;
+		document.getElementById('hint').innerHTML = '<b>HINT: </b>' + definition;
 	}
 };
 
